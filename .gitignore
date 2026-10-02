@@ -3,7 +3,7 @@
 .env.*
 !.env.example
 
-.github/
+/.github/
 # Go
 /bin/
 *.test
@@ -22,6 +22,7 @@ web/dist/
 *.swp
 
 # Runtime data
+/data/
 .tmp/
 var/
 logs/
