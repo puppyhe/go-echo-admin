@@ -1,0 +1,8 @@
+.git
+.gitignore
+.env
+web/node_modules
+web/dist
+/tmp
+var
+logs

@@ -1,0 +1,39 @@
+{
+  "name": "go-echo-admin-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run typecheck && vite build",
+    "typecheck": "tsc -p tsconfig.app.json --pretty false",
+    "test": "node --import ./scripts/test-polyfill.mjs --loader ./scripts/typescript-loader.mjs --test tests/*.test.mjs src/pages/systemTools/autoCodeContracts.test.mjs",
+    "format": "prettier --write src tests scripts vite.config.ts"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@ant-design/pro-components": "^2.8.10",
+    "antd": "^5.24.0",
+    "dayjs": "^1.11.19",
+    "echarts": "^6.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "26.1.0",
+    "prettier": "3.6.2",
+    "typescript": "~5.9.3",
+    "vite": "^6.0.5"
+  },
+  "overrides": {
+    "path-to-regexp": "^8.4.0"
+  },
+  "engines": {
+    "node": ">=22.15.0"
+  }
+}

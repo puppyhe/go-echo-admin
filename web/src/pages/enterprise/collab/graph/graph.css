@@ -1,0 +1,37 @@
+.workflow-graph-scroll {
+  overflow: auto;
+  max-height: 65vh;
+  border: 1px solid var(--ant-color-border, #d9e2ee);
+  border-radius: 10px;
+  background: #f6f8fc;
+}
+.workflow-graph-canvas {
+  display: block;
+  background-image: radial-gradient(#d9e2ee 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+.workflow-graph-canvas g[role='button'] {
+  cursor: pointer;
+  outline: none;
+}
+.workflow-graph-canvas g[role='button']:focus-visible {
+  filter: drop-shadow(0 0 3px #722ed1);
+}
+.workflow-graph-canvas .workflow-graph-draggable {
+  cursor: grab;
+  touch-action: none;
+}
+.workflow-graph-designer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 16px;
+  margin-top: 16px;
+}
+.workflow-graph-inspector {
+  min-width: 0;
+}
+@media (max-width: 850px) {
+  .workflow-graph-designer {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,26 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Go
+/bin/
+*.test
+coverage.out
+coverage.html
+/echo-stage3-upgrade
+
+# Frontend
+web/node_modules/
+web/dist/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Runtime data
+.tmp/
+var/
+logs/

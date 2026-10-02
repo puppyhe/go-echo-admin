@@ -1,0 +1,120 @@
+.org-workspace {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+}
+.org-list-card,
+.org-member-card {
+  min-height: 560px;
+}
+.org-list-card .ant-card-head {
+  padding-inline: 16px;
+}
+.org-list-card .ant-card-body {
+  padding: 16px;
+}
+.org-tree,
+.org-position-list {
+  margin-top: 16px;
+  min-height: 280px;
+  max-height: calc(100vh - 305px);
+  overflow: auto;
+}
+.org-tree-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+.org-tree-title > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.org-tree-title small,
+.org-disabled {
+  color: var(--text-muted);
+}
+.org-tree .ant-tree-node-content-wrapper {
+  min-width: 0;
+}
+.org-tree-actions {
+  flex: none;
+}
+.org-tree .ant-tree-treenode {
+  padding-block: 5px;
+}
+.org-member-search {
+  gap: 12px 0;
+  margin-bottom: 16px;
+}
+.org-member-search .ant-input-affix-wrapper {
+  width: 165px;
+}
+.org-members-summary {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.org-position-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+  background: var(--page-bg);
+  color: var(--text-body);
+}
+.org-position-item.selected {
+  background: color-mix(in srgb, var(--brand-primary) 10%, var(--surface));
+  color: var(--brand-primary);
+}
+.org-position-select {
+  border: 0;
+  flex: 1;
+  min-width: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+.org-position-select span {
+  font-size: 13px;
+}
+@media (max-width: 1050px) {
+  .org-workspace {
+    grid-template-columns: 290px minmax(0, 1fr);
+  }
+  .org-list-card .ant-card-head-wrapper {
+    flex-wrap: wrap;
+    padding-block: 12px;
+    gap: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .org-workspace {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .org-list-card {
+    min-height: 250px;
+  }
+  .org-tree,
+  .org-position-list {
+    min-height: 120px;
+    max-height: 300px;
+  }
+  .org-member-card .ant-card-head-wrapper {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-block: 12px;
+  }
+}

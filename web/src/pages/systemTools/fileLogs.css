@@ -1,0 +1,46 @@
+.file-log-layout {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.file-log-content {
+  min-width: 0;
+}
+.file-log-search {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.file-log-search .ant-input-search {
+  max-width: 420px;
+}
+.file-log-text {
+  margin: 0 0 16px;
+  min-height: 360px;
+  max-height: 65vh;
+  overflow: auto;
+  padding: 16px;
+  border-radius: 6px;
+  background: var(--ant-color-fill-quaternary, rgba(128, 128, 128, 0.05));
+  font:
+    12px/1.8 ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Consolas,
+    monospace;
+  white-space: pre;
+}
+.file-log-wrap {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 1100px) {
+  .file-log-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .file-log-layout > .ant-card:first-child {
+    max-width: 480px;
+  }
+}

@@ -1,0 +1,54 @@
+.about-page {
+  padding-top: 8px;
+}
+.about-card.ant-card {
+  border-radius: 12px;
+}
+.about-project-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 166px;
+}
+.about-project-logo img {
+  object-fit: contain;
+}
+.about-project-description {
+  text-align: center;
+  margin-top: 18px;
+}
+.about-stack-tags {
+  display: flex;
+  justify-content: center;
+}
+.about-capabilities {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.about-capabilities article {
+  padding: 20px;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+}
+.about-capabilities h3 {
+  margin: 0 0 10px;
+  color: var(--text-strong);
+}
+.about-capabilities p {
+  color: var(--text-body);
+  line-height: 1.8;
+  margin: 0;
+}
+.about-capabilities .ant-btn {
+  padding-left: 0;
+  margin-top: 12px;
+}
+@media (max-width: 575px) {
+  .about-card .ant-card-body {
+    padding: 18px;
+  }
+  .about-capabilities {
+    grid-template-columns: 1fr;
+  }
+}

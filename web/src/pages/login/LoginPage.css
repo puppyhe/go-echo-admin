@@ -1,0 +1,349 @@
+.login-page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 32px 5.9vw;
+  color: #111;
+  background: #f2f6fc url('/brand/login-background.png') center / cover no-repeat;
+}
+
+.login-card {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  width: clamp(410px, 26.8vw, 460px);
+  min-height: 620px;
+  padding: 36px 35px 32px;
+  border: 1px solid rgba(230, 235, 243, 0.78);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 7px 30px rgba(51, 77, 113, 0.11);
+  backdrop-filter: blur(7px);
+}
+
+.login-card-header,
+.login-card-brand {
+  display: flex;
+  align-items: center;
+}
+
+.login-card-brand {
+  min-width: 0;
+  gap: 13px;
+  color: #111;
+}
+
+.login-card-brand strong {
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+  white-space: nowrap;
+}
+
+.login-logo {
+  display: block;
+  flex: 0 0 auto;
+  width: 43px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.login-card h1 {
+  margin: 42px 0 12px;
+  color: #111;
+  font-size: 30px;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+}
+
+.login-card-tenant {
+  min-height: 0;
+  padding-bottom: 30px;
+}
+
+.login-card-tenant h1 {
+  margin-bottom: 10px;
+}
+
+.login-card-tenant > .ant-typography {
+  margin: 0 0 24px;
+  color: #7f8da3;
+  font-size: 16px;
+}
+
+.tenant-form .ant-form-item {
+  margin-bottom: 22px;
+}
+
+.tenant-form .ant-form-item-label > label {
+  color: #202b3c;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tenant-form .ant-input-affix-wrapper {
+  height: 57px;
+  padding-inline: 17px;
+  border-color: #ccd5e2;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: none;
+}
+
+.tenant-form .ant-input-affix-wrapper:hover,
+.tenant-form .ant-input-affix-wrapper-focused {
+  border-color: var(--brand-primary);
+}
+
+.tenant-form .ant-input {
+  color: #111;
+  font-size: 16px;
+}
+
+.tenant-form .ant-input-prefix {
+  margin-right: 14px;
+  color: #7f94b8;
+  font-size: 21px;
+}
+
+.tenant-form .ant-input::placeholder {
+  color: #8a9ab7;
+}
+
+.tenant-form .ant-alert {
+  margin-bottom: 16px;
+}
+
+.tenant-submit.ant-btn {
+  height: 53px;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.login-platform-link.ant-btn {
+  display: block;
+  margin-top: 10px;
+  padding-inline: 0;
+  color: var(--brand-primary);
+  font-size: 15px;
+  text-align: left;
+}
+
+.login-mode {
+  display: flex;
+  height: 53px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #dce2ea;
+}
+
+.login-mode span {
+  position: relative;
+  display: grid;
+  min-width: 50%;
+  place-items: center;
+  color: var(--brand-primary);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.login-mode span::after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  content: '';
+  background: var(--brand-primary);
+}
+
+.login-form .ant-form-item {
+  margin-bottom: 25px;
+}
+
+.login-form .ant-input-affix-wrapper,
+.login-form .ant-form-item-control-input-content > .ant-input {
+  height: 57px;
+  padding-inline: 17px;
+  border-color: #ccd5e2;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: none;
+}
+
+.login-form .ant-input-affix-wrapper:hover,
+.login-form .ant-input-affix-wrapper-focused,
+.login-form .ant-form-item-control-input-content > .ant-input:hover,
+.login-form .ant-form-item-control-input-content > .ant-input:focus {
+  border-color: var(--brand-primary);
+}
+
+.login-form .ant-input {
+  color: #111;
+  font-size: 16px;
+}
+
+.login-form .ant-input-affix-wrapper input {
+  height: auto;
+  background: transparent;
+}
+
+.login-form .ant-input:-webkit-autofill,
+.login-form .ant-input:-webkit-autofill:hover,
+.login-form .ant-input:-webkit-autofill:focus,
+.login-form .ant-input:-webkit-autofill:active,
+.login-form .ant-input:autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+  box-shadow: 0 0 0 1000px #fff inset !important;
+  -webkit-text-fill-color: #111 !important;
+  caret-color: #111;
+  transition: background-color 9999s ease-out 0s;
+}
+
+.login-form .ant-input::placeholder {
+  color: #8a9ab7;
+}
+
+.login-form .ant-input-prefix {
+  margin-right: 15px;
+  color: #7f94b8;
+  font-size: 22px;
+}
+
+.login-form .ant-input-suffix {
+  color: #7f94b8;
+  font-size: 18px;
+}
+
+.login-form > .ant-form-item:last-child {
+  margin-bottom: 0;
+}
+
+.login-captcha-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.login-captcha-row .ant-form-item {
+  flex: 1;
+  min-width: 0;
+}
+
+.login-captcha-button {
+  display: grid;
+  flex: 0 0 116px;
+  height: 57px;
+  padding: 0;
+  overflow: hidden;
+  place-items: center;
+  border: 1px solid #ccd5e2;
+  border-radius: 5px;
+  background: #eaf0fb;
+  cursor: pointer;
+}
+
+.login-captcha-button:focus-visible {
+  outline: 2px solid #005DFB;
+  outline-offset: 3px;
+}
+
+.login-captcha-button img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.login-submit.ant-btn {
+  height: 53px;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.login-submit.ant-btn-primary:not(:disabled) {
+  background: #005DFB;
+}
+
+.login-submit.ant-btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, #005DFB 85%, white);
+}
+
+.login-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-top: 20px;
+}
+
+.login-actions .ant-btn {
+  height: auto;
+  padding: 4px 0;
+  font-size: 15px;
+}
+
+.login-init.ant-btn {
+  color: #005DFB;
+}
+
+.login-forgot.ant-btn {
+  color: #8494ae;
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .login-page {
+    padding-inline: 4vw;
+  }
+
+  .login-card {
+    width: 410px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    align-items: flex-start;
+    justify-content: center;
+    padding: 24px 16px;
+    background-position: 34% center;
+  }
+
+  .login-page::before {
+    position: absolute;
+    inset: 0;
+    content: '';
+    background: rgba(245, 248, 253, 0.58);
+    backdrop-filter: blur(2px);
+  }
+
+  .login-card {
+    width: 100%;
+    max-width: 460px;
+    min-height: 0;
+    padding: 28px 24px 30px;
+  }
+
+  .login-card h1 {
+    margin-top: 34px;
+  }
+
+  .login-card-brand strong {
+    font-size: clamp(19px, 5.4vw, 24px);
+  }
+
+  .login-captcha-row {
+    gap: 10px;
+  }
+
+  .login-captcha-button {
+    flex-basis: 96px;
+  }
+}

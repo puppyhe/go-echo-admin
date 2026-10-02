@@ -1,0 +1,33 @@
+.notification-management-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.notification-form-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 20px;
+}
+.notification-variable-row {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) 130px 55px minmax(110px, 1fr) 32px;
+  gap: 12px;
+  align-items: center;
+}
+.notification-variable-row > .ant-btn {
+  margin-top: 8px;
+}
+@media (max-width: 650px) {
+  .notification-form-columns {
+    grid-template-columns: 1fr;
+  }
+  .notification-variable-row {
+    grid-template-columns: minmax(80px, 1fr) 100px 50px;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-light);
+    margin-bottom: 16px;
+  }
+}
