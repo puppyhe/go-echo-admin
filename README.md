@@ -149,8 +149,6 @@ npm --prefix web run build
 生产部署必须关闭开发工具和演示种子，使用 TLS/反向代理限制 CORS，配置 Token 轮换、限流、审计保留和备份策略。不要把密码、Token、数据库连接串或生产日志提交到仓库。多租户资源缺少认证上下文时默认拒绝；伪造 `tenant_id` 请求头不会改变服务端租户范围。
 
 ## 文档与贡献
-
-- [产品需求文档](docs/echo-admin-prd.md)
 - [架构概览](docs/architecture/overview.md)
 - [数据库迁移说明](migrations/README.md)
 - [配置参考](docs/configuration.md)
